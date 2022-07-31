@@ -1,0 +1,80 @@
+.subscribe-form {
+  @include for-phone-up {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin-bottom: 60px;
+  }
+
+  @include for-tablet-up {
+  }
+
+  @include for-desktop {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__input-container {
+    @include for-phone-up {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      margin-bottom: 20px;
+    }
+
+    @include for-tablet-up {
+    }
+
+    @include for-desktop {
+      display: flex;
+      flex-direction: column;
+      margin-right: 12px;
+    }
+  }
+  &__email-input {
+    border: 1px solid $input-footer-border;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    background: transparent;
+    padding: 15px 16px;
+
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+
+    color: $color-text-footer;
+
+    @include for-phone-up {
+    }
+
+    @include for-tablet-up {
+    }
+
+    @include for-desktop {
+      width: 358px;
+      height: 50px;
+    }
+  }
+  &__email-input::placeholder {
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+
+    color: $color-text-footer;
+  }
+  &__button-container {
+    display: flex;
+    align-items: flex-end;
+  }
+  &__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+.submit-icon {
+  margin-left: 12px;
+  fill: currentColor;
+}

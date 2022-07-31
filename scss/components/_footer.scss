@@ -1,0 +1,68 @@
+.footer {
+  background-color: $hero-bg-color;
+
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  &__content {
+    @include for-phone-up {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    @include for-tablet-up {
+    }
+
+    @include for-desktop {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+  &__business-card {
+    @include for-phone-up {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      margin-bottom: 60px;
+    }
+
+    @include for-tablet-up {
+    }
+
+    @include for-desktop {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  &__social-container {
+    @include for-phone-up {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      margin-bottom: 60px;
+    }
+
+    @include for-tablet-up {
+    }
+
+    @include for-desktop {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  &__title {
+    font-weight: 700;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: $main-white-color;
+
+    margin-bottom: 20px;
+  }
+}

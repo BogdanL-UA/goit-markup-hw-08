@@ -1,0 +1,18 @@
+.form {
+  padding: 40px;
+}
+.form__title {
+  margin-bottom: 12px;
+
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: $primary-text-color;
+}
+.form__button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
