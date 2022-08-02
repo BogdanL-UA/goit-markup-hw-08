@@ -1,22 +1,42 @@
 .hero {
   background-color: $hero-bg-color;
-  background-image: linear-gradient(
-      rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)
-    ),
-    url(../images/main/hero-bgd.jpg);
+
   background-position: center;
   background-repeat: no-repeat;
   text-align: center;
-  background-size: 100%;
 
-  padding-top: 118px;
-  padding-bottom: 118px;
+  @include for-phone-up {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/main/hero-mobile.jpg);
+    max-width: 480px;
+    max-height: 400px;
+    padding-top: 118px;
+    padding-bottom: 118px;
+  }
 
   @include for-tablet-up {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/main/hero-tablet.jpg);
+    max-width: 768px;
+    max-height: 400px;
+    padding-top: 118px;
+    padding-bottom: 118px;
   }
   @include for-desktop {
-    background-size: 1600px 600px;
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/main/hero-bgd.jpg);
+
+    max-width: 1600px;
+    max-height: 600px;
     padding-top: 200px;
     padding-bottom: 200px;
   }
@@ -31,8 +51,6 @@
 
     margin-bottom: 30px;
 
-    @include for-tablet-up {
-    }
     @include for-desktop {
       font-size: 44px;
       line-height: 1.36;

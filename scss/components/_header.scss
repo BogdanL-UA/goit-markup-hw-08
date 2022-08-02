@@ -1,9 +1,35 @@
 .header {
+  position: relative;
   border-bottom: 1px solid $border-header;
   background-color: $main-white-color;
 
   &__content {
     display: flex;
     align-items: center;
+  }
+  &__burger-menu {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+
+    border: none;
+    background-color: $main-white-color;
+
+    @include for-tablet-up {
+      display: none;
+    }
+
+    @include for-desktop {
+      display: none;
+    }
+
+    &:hover,
+    &:focus {
+      color: $accent-color;
+      cursor: pointer;
+    }
+    &__icon {
+      color: currentColor;
+    }
   }
 }

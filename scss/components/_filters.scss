@@ -1,7 +1,20 @@
 .filters {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
+  @include for-phone-up {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+  }
+
+  @include for-tablet-up {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+  @include for-desktop {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+  }
 
   &__button {
     background-color: $secondary-bg-color;

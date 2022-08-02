@@ -36,6 +36,7 @@
               </li>
             </ul>
           </nav>
+
           <ul class="contacts-list">
             <li class="contacts-list__item">
               <a class="contacts-list__link" href="mailto:info@devstudio.com">
@@ -64,6 +65,72 @@
               >
             </li>
           </ul>
+
+          <button
+            type="button"
+            class="header__burger-menu"
+            data-mobile-menu-open
+          >
+            <svg class="burger-menu__icon" width="40" height="40">
+              <use href="./images/icons.svg#icon-menu"></use>
+            </svg>
+          </button>
+
+          <nav class="mobile-menu is-hidden" data-mobile-menu>
+            <button
+              type="button"
+              class="mobile-menu__close-button"
+              data-mobile-menu-close
+            >
+              <svg class="close-button__icon" width="40" height="40">
+                <use href="./images/icons.svg#icon-close_mobile-menu"></use>
+              </svg>
+            </button>
+            <ul class="mobile-menu__list">
+              <li class="mobile-menu__item">
+                <a class="mobile-menu__link" href="index.html">Студия</a>
+              </li>
+              <li class="mobile-menu__item">
+                <a class="mobile-menu__link" href="portfolio.html">Портфолио</a>
+              </li>
+              <li class="mobile-menu__item">
+                <a class="mobile-menu__link" href="#">Контакты</a>
+              </li>
+            </ul>
+
+            <ul class="mobile-menu__contacts-list">
+              <li class="contacts-list__item">
+                <a
+                  class="contacts-list__link mobile-menu__tel"
+                  href="tel:+380961111111"
+                >
+                  +38 096 111 11 11</a
+                >
+              </li>
+              <li class="contacts-list__item">
+                <a
+                  class="contacts-list__link mobile-menu__mail"
+                  href="mailto:info@devstudio.com"
+                >
+                  info@devstudio.com</a
+                >
+              </li>
+            </ul>
+            <ul class="mobile-menu__social-list">
+              <li class="mobile-menu__social-item">
+                <a href="#" class="mobile-menu__social-link">Instagram</a>
+              </li>
+              <li class="mobile-menu__social-item">
+                <a href="#" class="mobile-menu__social-link">Twitter</a>
+              </li>
+              <li class="mobile-menu__social-item">
+                <a href="#" class="mobile-menu__social-link">Facebook</a>
+              </li>
+              <li class="mobile-menu__social-item">
+                <a href="#" class="mobile-menu__social-link">LinkedIn</a>
+              </li>
+            </ul>
+          </nav>
         </div>
       </div>
     </header>
@@ -714,37 +781,36 @@
           </div>
         </div>
 
-        <div class="subscribe-container">
-          <form
-            name="subscribe-form"
-            autocomplete="on"
-            class="subscribe-form"
-            novalidate
-          >
-            <div class="subscribe-form__input-container">
-              <label class="footer__title" for="email">
-                Подпишитесь на рассылку</label
-              >
-              <input
-                class="subscribe-form__email-input"
-                type="email"
-                name="email"
-                id="email"
-                placeholder="E-mail"
-              />
-            </div>
-            <div class="subscribe-form__button-container">
-              <button type="submit" class="button subscribe-form__button">
-                Подписаться
-                <svg class="submit-icon" width="24" height="24">
-                  <use href="./images/icons.svg#icon-send"></use>
-                </svg>
-              </button>
-            </div>
-          </form>
-        </div>
+        <form
+          name="subscribe-form"
+          autocomplete="on"
+          class="subscribe-form"
+          novalidate
+        >
+          <div class="subscribe-form__input-container">
+            <label class="footer__title" for="email">
+              Подпишитесь на рассылку</label
+            >
+            <input
+              class="subscribe-form__email-input"
+              type="email"
+              name="email"
+              id="email"
+              placeholder="E-mail"
+            />
+          </div>
+          <div class="subscribe-form__button-container">
+            <button type="submit" class="button subscribe-form__button">
+              Подписаться
+              <svg class="submit-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-send"></use>
+              </svg>
+            </button>
+          </div>
+        </form>
       </div>
     </footer>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
