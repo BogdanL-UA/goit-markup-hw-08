@@ -24,12 +24,12 @@
                 >
               </li>
               <li class="nav__item">
-                <a class="nav__link nav__link--active" href="index.html"
-                  >Студия</a
-                >
+                <a class="nav__link" href="index.html">Студия</a>
               </li>
               <li class="nav__item">
-                <a class="nav__link" href="portfolio.html">Портфолио</a>
+                <a class="nav__link nav__link--active" href="portfolio.html"
+                  >Портфолио</a
+                >
               </li>
               <li class="nav__item">
                 <a class="nav__link" href="#">Контакты</a>
@@ -83,7 +83,7 @@
               data-mobile-menu-close
             >
               <svg class="close-button__icon" width="40" height="40">
-                <use href="./images/icons.svg#icon-close_mobile-menu"></use>
+                <use href="../images/icons.svg#icon-close_mobile-menu"></use>
               </svg>
             </button>
             <ul class="mobile-menu__list">
@@ -169,7 +169,8 @@
             <li class="project__item">
               <div class="overlay-container">
                 <img
-                  class="project-img"
+                  class="project__img"
+                  srcset="./images/portfolio/project1@x2.jpg 2x"
                   src="./images/portfolio/project1.jpg"
                   width="370"
                   height="294"
@@ -192,7 +193,8 @@
             <li class="project__item">
               <div class="overlay-container">
                 <img
-                  class="project-img"
+                  class="project__img"
+                  srcset="./images/portfolio/project2@x2.jpg 2x"
                   src="./images/portfolio/project2.jpg"
                   width="370"
                   height="294"
@@ -216,7 +218,8 @@
             <li class="project__item">
               <div class="overlay-container">
                 <img
-                  class="project-img"
+                  class="project__img"
+                  srcset="./images/portfolio/project3@x2.jpg 2x"
                   src="./images/portfolio/project3.jpg"
                   width="370"
                   height="294"
@@ -240,7 +243,8 @@
             <li class="project__item">
               <div class="overlay-container">
                 <img
-                  class="project-img"
+                  class="project__img"
+                  srcset="./images/portfolio/project4@x2.jpg 2x"
                   src="./images/portfolio/project4.jpg"
                   width="370"
                   height="294"
@@ -264,7 +268,8 @@
             <li class="project__item">
               <div class="overlay-container">
                 <img
-                  class="project-img"
+                  class="project__img"
+                  srcset="./images/portfolio/project5@x2.jpg 2x"
                   src="./images/portfolio/project5.jpg"
                   width="370"
                   height="294"
@@ -287,7 +292,8 @@
             <li class="project__item">
               <div class="overlay-container">
                 <img
-                  class="project-img"
+                  class="project__img"
+                  srcset="./images/portfolio/project6@x2.jpg 2x"
                   src="./images/portfolio/project6.jpg"
                   width="370"
                   height="294"
@@ -311,7 +317,8 @@
             <li class="project__item">
               <div class="overlay-container">
                 <img
-                  class="project-img"
+                  class="project__img"
+                  srcset="./images/portfolio/project7@x2.jpg 2x"
                   src="./images/portfolio/project7.jpg"
                   width="370"
                   height="294"
@@ -335,7 +342,8 @@
             <li class="project__item">
               <div class="overlay-container">
                 <img
-                  class="project-img"
+                  class="project__img"
+                  srcset="./images/portfolio/project8@x2.jpg 2x"
                   src="./images/portfolio/project8.jpg"
                   width="370"
                   height="294"
@@ -359,7 +367,8 @@
             <li class="project__item">
               <div class="overlay-container">
                 <img
-                  class="project-img"
+                  class="project__img"
+                  srcset="./images/portfolio/project9@x2.jpg 2x"
                   src="./images/portfolio/project9.jpg"
                   width="370"
                   height="294"
@@ -409,7 +418,7 @@
           </address>
         </div>
 
-        <div class="social-container">
+        <div class="footer__social-container">
           <h2 class="footer__title">Присоединяйтесь</h2>
           <div class="social">
             <ul class="social__list">
@@ -461,36 +470,33 @@
           </div>
         </div>
 
-        <div class="subscribe-container">
-          <form
-            name="subscribe-form"
-            autocomplete="on"
-            class="subscribe-form"
-            novalidate
-          >
-            <div class="subscribe-form__input-container">
-              <label class="footer__title" for="email">
-                Подпишитесь на рассылку</label
-              >
-              <input
-                class="subscribe-form__email-input"
-                type="email"
-                name="email"
-                id="email"
-                placeholder="E-mail"
-              />
-            </div>
-            <div class="subscribe-form__button-container">
-              <button type="submit" class="button subscribe-form__button">
-                Подписаться
-                <svg class="submit-icon" width="24" height="24">
-                  <use href="./images/icons.svg#icon-send"></use>
-                </svg>
-              </button>
-            </div>
-          </form>
-        </div>
+        <form
+          name="subscribe-form"
+          autocomplete="on"
+          class="subscribe-form"
+          novalidate
+        >
+          <div class="subscribe-form__input-container">
+            <h2 class="footer__title" for="email">Подпишитесь на рассылку</h2>
+            <input
+              class="subscribe-form__email-input"
+              type="email"
+              name="email"
+              id="email"
+              placeholder="E-mail"
+            />
+          </div>
+          <div class="subscribe-form__button-container">
+            <button type="submit" class="button subscribe-form__button">
+              Подписаться
+              <svg class="submit-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-send"></use>
+              </svg>
+            </button>
+          </div>
+        </form>
       </div>
     </footer>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

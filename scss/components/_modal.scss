@@ -11,6 +11,7 @@
 
   @include for-phone-up {
     min-width: 95%;
+    max-width: 450px;
   }
 
   @include for-desktop {

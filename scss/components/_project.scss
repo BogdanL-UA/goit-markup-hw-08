@@ -1,12 +1,23 @@
 .project {
   &__list {
-    display: flex;
-    flex-wrap: wrap;
+    @include for-tablet-up {
+      display: flex;
+      flex-wrap: wrap;
 
-    margin-top: -30px;
-    margin-left: -30px;
-    padding-left: 0;
-    padding-right: 0;
+      margin-top: -30px;
+      margin-left: -30px;
+      padding-left: 0;
+      padding-right: 0;
+    }
+    @include for-desktop {
+      display: flex;
+      flex-wrap: wrap;
+
+      margin-top: -30px;
+      margin-left: -30px;
+      padding-left: 0;
+      padding-right: 0;
+    }
   }
 
   &__item {
@@ -15,17 +26,32 @@
     border-left: 1px solid $border-cards;
     border-right: 1px solid $border-cards;
 
-    flex-basis: calc(100% / 3 - 30px);
-    margin-top: 30px;
-    margin-left: 30px;
-
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    @include for-tablet-up {
+      flex-basis: calc(100% / 2 - 30px);
+      margin-top: 30px;
+      margin-left: 30px;
+    }
+    @include for-desktop {
+      flex-basis: calc(100% / 3 - 30px);
+      margin-top: 30px;
+      margin-left: 30px;
+    }
+  }
+  &__item:not(:last-child) {
+    margin-bottom: 30px;
   }
   &__item:hover,
   &__item:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
       1px 4px 6px rgba(0, 0, 0, 0.16);
     cursor: pointer;
+  }
+  &__img {
+    @include for-phone-up {
+      width: 100%;
+    }
   }
 
   &__text-container {

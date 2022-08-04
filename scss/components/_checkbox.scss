@@ -5,9 +5,14 @@
   margin-bottom: 30px;
 
   &__label {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include for-phone-up {
+    }
+
+    @include for-desktop {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
   }
 
   &__icon {
@@ -21,9 +26,13 @@
   }
 
   &__link {
-    line-height: 1.71;
     letter-spacing: 0.03em;
     color: $accent-color;
+    line-height: 1.17;
+
+    @include for-desktop {
+      line-height: 1.71;
+    }
   }
 
   &__input:checked + &__icon {
@@ -38,6 +47,10 @@
   }
 }
 .agree__text {
-  line-height: 1.71;
+  line-height: 1.17;
   letter-spacing: 0.03em;
+
+  @include for-desktop {
+    line-height: 1.71;
+  }
 }

@@ -83,7 +83,7 @@
               data-mobile-menu-close
             >
               <svg class="close-button__icon" width="40" height="40">
-                <use href="./images/icons.svg#icon-close_mobile-menu"></use>
+                <use href="../images/icons.svg#icon-close_mobile-menu"></use>
               </svg>
             </button>
             <ul class="mobile-menu__list">
@@ -234,7 +234,7 @@
                   type="checkbox"
                 />
                 <span class="checkbox__icon"></span>
-                <span class="checkbox__text"
+                <span class="agree__text"
                   >Соглашаюсь с рассылкой и принимаю
                   <a href="#" class="checkbox__link">Условия договора</a></span
                 >
@@ -332,6 +332,7 @@
               <div class="activities__thumb">
                 <img
                   class="thumb__img"
+                  srcset="./images/main/box-1@x2.jpg 2x"
                   src="./images/main/box1.jpg"
                   width="370"
                   height="295"
@@ -344,6 +345,7 @@
               <div class="activities__thumb">
                 <img
                   class="thumb__img"
+                  srcset="./images/main/box-2@x2.jpg 2x"
                   src="./images/main/box2.jpg"
                   width="370"
                   height="295"
@@ -356,6 +358,7 @@
               <div class="activities__thumb">
                 <img
                   class="thumb__img"
+                  srcset="./images/main/box-3@x2.jpg 2x"
                   src="./images/main/box3.jpg"
                   width="370"
                   height="295"
@@ -375,7 +378,7 @@
             <li class="team__item">
               <img
                 class="team__img"
-                class="team__img"
+                srcset="./images/main/person-1@x2.jpg 2x"
                 src="./images/main/IgorDemyanenko.jpg"
                 width="270"
                 height="260"
@@ -439,6 +442,7 @@
             <li class="team__item">
               <img
                 class="team__img"
+                srcset="./images/main/person-2@x2.jpg 2x"
                 src="./images/main/OlgaRepina.jpg"
                 width="270"
                 height="260"
@@ -502,6 +506,7 @@
             <li class="team__item">
               <img
                 class="team__img"
+                srcset="./images/main/person-3@x2.jpg 2x"
                 src="./images/main/NikolaiTarasov.jpg"
                 width="270"
                 height="260"
@@ -565,6 +570,7 @@
             <li class="team__item">
               <img
                 class="team__img"
+                srcset="./images/main/person-4@x2.jpg 2x"
                 src="./images/main/MikhailErmakov.jpg"
                 width="270"
                 height="260"
@@ -788,9 +794,7 @@
           novalidate
         >
           <div class="subscribe-form__input-container">
-            <label class="footer__title" for="email">
-              Подпишитесь на рассылку</label
-            >
+            <h2 class="footer__title" for="email">Подпишитесь на рассылку</h2>
             <input
               class="subscribe-form__email-input"
               type="email"

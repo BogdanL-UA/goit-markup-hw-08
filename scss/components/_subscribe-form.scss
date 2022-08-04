@@ -4,31 +4,29 @@
     flex-direction: column;
     align-items: center;
     width: 100%;
-
-    margin-bottom: 60px;
   }
 
   @include for-tablet-up {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 450px;
   }
 
   @include for-desktop {
     display: flex;
-    justify-content: space-between;
   }
 
   &__input-container {
     @include for-phone-up {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
       width: 100%;
-
       margin-bottom: 20px;
     }
 
     @include for-tablet-up {
+      width: 450px;
+      margin-bottom: 20px;
     }
-
     @include for-desktop {
       display: flex;
       flex-direction: column;
@@ -49,10 +47,11 @@
     color: $color-text-footer;
 
     @include for-phone-up {
-      width: 100%;
+      width: inherit;
     }
 
     @include for-tablet-up {
+      width: inherit;
     }
 
     @include for-desktop {

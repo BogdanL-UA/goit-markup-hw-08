@@ -1,9 +1,16 @@
 .specialty-list {
-  display: block;
-  align-items: center;
-  padding-left: 0;
+  @include for-phone-up {
+    display: block;
+    align-items: center;
+    padding-left: 0;
+  }
 
   @include for-tablet-up {
+    display: flex;
+    flex-wrap: wrap;
+
+    margin-top: -30px;
+    margin-left: -30px;
   }
   @include for-desktop {
     display: flex;
@@ -13,17 +20,26 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100%;
+
     height: 120px;
     border-radius: 4px;
     margin-bottom: 30px;
 
     background: $secondary-bg-color;
 
-    @include for-tablet-up {
+    @include for-phone-up {
+      width: 100%;
     }
+
     @include for-desktop {
       width: 270px;
+    }
+  }
+  &__item {
+    @include for-tablet-up {
+      flex-basis: calc(100% / 2 - 30px);
+      margin-top: 30px;
+      margin-left: 30px;
     }
   }
   &__item:not(:last-child) {
