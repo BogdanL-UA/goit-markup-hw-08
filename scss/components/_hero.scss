@@ -6,9 +6,9 @@ $hero-gradient: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
   background-position: center;
   background-repeat: no-repeat;
   text-align: center;
-  background-size: cover;
   padding-top: 118px;
   padding-bottom: 118px;
+  height: auto;
 
   @include for-phone-up {
     background-image: $hero-gradient, url(../images/main/hero-mobile.jpg);
@@ -28,6 +28,7 @@ $hero-gradient: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
     @media (min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
       background-image: $hero-gradient, url(../images/main/hero-desktop@x2.jpg);
     }
+    max-width: 1600px;
 
     padding-top: 200px;
     padding-bottom: 200px;
