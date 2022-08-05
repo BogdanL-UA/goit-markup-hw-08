@@ -7,11 +7,7 @@
     display: block;
 
     @include for-tablet-up {
-      display: flex;
-      flex-wrap: wrap;
-
-      margin-top: -30px;
-      margin-left: -30px;
+      @include wrap-30;
     }
     @include for-desktop {
       display: flex;
@@ -29,9 +25,7 @@
     }
 
     @include for-tablet-up {
-      flex-basis: calc(100% / 2 - 30px);
-      margin-top: 30px;
-      margin-left: 30px;
+      @include flex-basisX2;
     }
   }
   &__item:not(:last-child) {

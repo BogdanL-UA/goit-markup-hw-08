@@ -6,9 +6,7 @@
 
   &__content {
     @include for-phone-up {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
+      @include flex-column-center;
     }
 
     @include for-tablet-up {
@@ -26,17 +24,13 @@
   }
   &__business-card {
     @include for-phone-up {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
+      @include flex-column-center;
 
       margin-bottom: 60px;
     }
 
     @include for-tablet-up {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
+      @include flex-column-center;
     }
 
     @include for-desktop {
@@ -47,22 +41,16 @@
 
   &__social-container {
     @include for-phone-up {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
+      @include flex-column-center;
 
       margin-bottom: 60px;
     }
     @include for-tablet-up {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
+      @include flex-column-center;
     }
 
     @include for-desktop {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
+      @include flex-column-center;
     }
   }
 

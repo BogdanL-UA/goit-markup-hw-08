@@ -1,22 +1,10 @@
 .project {
   &__list {
     @include for-tablet-up {
-      display: flex;
-      flex-wrap: wrap;
-
-      margin-top: -30px;
-      margin-left: -30px;
-      padding-left: 0;
-      padding-right: 0;
+      @include wrap-30;
     }
     @include for-desktop {
-      display: flex;
-      flex-wrap: wrap;
-
-      margin-top: -30px;
-      margin-left: -30px;
-      padding-left: 0;
-      padding-right: 0;
+      @include wrap-30;
     }
   }
 
@@ -29,14 +17,10 @@
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     @include for-tablet-up {
-      flex-basis: calc(100% / 2 - 30px);
-      margin-top: 30px;
-      margin-left: 30px;
+      @include flex-basisX2;
     }
     @include for-desktop {
-      flex-basis: calc(100% / 3 - 30px);
-      margin-top: 30px;
-      margin-left: 30px;
+      @include flex-basisX3;
     }
   }
   &__item:not(:last-child) {

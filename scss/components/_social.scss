@@ -1,10 +1,8 @@
 .social {
   &__link {
-    display: flex;
-    align-items: center;
+    @include flex-center-center;
     width: 44px;
     height: 44px;
-    justify-content: center;
     border-radius: 50%;
     background: $main-white-color;
     fill: $icon-color;

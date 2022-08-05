@@ -1,12 +1,11 @@
 .close-button {
+  @include flex-center-center;
+
   position: absolute;
   top: 8px;
   right: 8px;
   width: 30px;
   height: 30px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   border-radius: 50%;
 
   background: $main-white-color;

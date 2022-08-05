@@ -1,19 +1,11 @@
 .clients {
   &__list {
     @include for-phone-up {
-      display: flex;
-      flex-wrap: wrap;
-
-      margin-top: -30px;
-      margin-left: -30px;
+      @include wrap-30;
     }
 
     @include for-tablet-up {
-      display: flex;
-      flex-wrap: wrap;
-
-      margin-top: -30px;
-      margin-left: -30px;
+      @include wrap-30;
     }
     @include for-desktop {
       display: flex;
@@ -21,15 +13,11 @@
   }
   .clients__item {
     @include for-phone-up {
-      flex-basis: calc(100% / 2 - 30px);
-      margin-top: 30px;
-      margin-left: 30px;
+      @include flex-basisX2;
     }
 
     @include for-tablet-up {
-      flex-basis: calc(100% / 3 - 30px);
-      margin-top: 30px;
-      margin-left: 30px;
+      @include flex-basisX3;
     }
   }
   &__item:not(:last-child) {
@@ -39,9 +27,8 @@
   }
 
   &__link {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex-center-center;
+
     height: 92px;
     border: 1px solid #afb1b8;
     border-radius: 4px;

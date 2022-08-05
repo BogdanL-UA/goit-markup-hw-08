@@ -1,17 +1,15 @@
 .address {
   &__list {
     @include for-phone-up {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      margin-bottom: 60px;
+      @include flex-column-center {
+        margin-bottom: 60px;
+      }
     }
 
     @include for-tablet-up {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      margin-bottom: 60px;
+      @include flex-column-center {
+        margin-bottom: 60px;
+      }
     }
   }
 

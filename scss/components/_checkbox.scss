@@ -9,9 +9,7 @@
     }
 
     @include for-desktop {
-      display: flex;
-      justify-content: center;
-      align-items: center;
+       @include flex-center-center;
     }
   }
 
