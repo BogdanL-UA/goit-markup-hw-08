@@ -679,6 +679,16 @@ address {
             align-items: flex-end;
   }
 }
+@media (min-width: 768px) and (max-width: 1199px) {
+  .checkbox__label {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+}
 @media (min-width: 1200px) {
   .checkbox__label {
     display: -webkit-box;
