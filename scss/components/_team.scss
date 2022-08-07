@@ -20,15 +20,14 @@
       0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
 
-    @include for-phone-up {
-      margin-bottom: 30px;
-    }
-
     @include for-tablet-up {
       @include flex-basisX2;
     }
   }
   &__item:not(:last-child) {
+    @include for-phone-up {
+      margin-bottom: 30px;
+    }
     @include for-desktop {
       margin-right: 30px;
     }

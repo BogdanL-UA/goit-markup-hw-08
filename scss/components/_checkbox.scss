@@ -6,10 +6,12 @@
 
   &__label {
     @include for-phone-up {
+      display: flex;
+      align-items: flex-end;
     }
 
     @include for-desktop {
-       @include flex-center-center;
+      @include flex-center-center;
     }
   }
 
@@ -45,10 +47,12 @@
   }
 }
 .agree__text {
+  font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.03em;
 
   @include for-desktop {
+    font-size: 14px;
     line-height: 1.71;
   }
 }

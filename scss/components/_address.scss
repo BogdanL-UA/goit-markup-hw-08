@@ -2,7 +2,6 @@
   &__list {
     @include for-phone-up {
       @include flex-column-center {
-        margin-bottom: 60px;
       }
     }
 
